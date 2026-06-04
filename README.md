@@ -16,9 +16,9 @@ pip install -r requirements.txt
 ```
 torch>=2.0
 torchvision>=0.15
-matplotlib
-numpy
-scikit-learn
+matplotlib==3.10.0
+numpy==2.4.6
+scikit-learn==1.6.1
 ```
 
 ---
