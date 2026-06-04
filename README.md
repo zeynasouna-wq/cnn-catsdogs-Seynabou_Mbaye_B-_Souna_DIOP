@@ -25,7 +25,7 @@ scikit-learn==1.6.1
 
 ## Note sur l'environnement d'exécution
 
-L'entraînement a été initialement tenté sur **Google Colab** (GPU T4), mais les limites de quota GPU gratuites ont rendu l'exécution complète impossible — les sessions se déconnectaient régulièrement et le quota était épuisé avant la fin des entraînements. Le notebook a finalement été exécuté sur **Kaggle** (GPU P100 gratuit, 30h/semaine), qui s'est avéré plus stable et sans interruption.
+L'entraînement a été initialement tenté sur **Google Colab** (GPU T4), mais les limites de quota GPU gratuites ont rendu l'exécution complète impossible — les sessions se déconnectaient régulièrement et le quota était épuisé avant la fin des entraînements. Le notebook a finalement été exécuté sur **Kaggle** (GPU T4 x2, 30h/semaine), qui s'est avéré plus stable et sans interruption.
 
 ---
 
@@ -51,7 +51,7 @@ Cat_Dog_data/
 
 ## GPU
 
-Entraînement effectué sur **GPU NVIDIA T4 x2** (Kaggle). Vérification dans le notebook :
+Entraînement effectué sur **GPU T4 x2** (Kaggle). Vérification dans le notebook :
 
 ```python
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
