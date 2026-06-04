@@ -31,7 +31,7 @@ L'entraînement a été initialement tenté sur **Google Colab** (GPU T4), mais 
 
 ## Organisation des données
 
-Télécharger le dataset depuis [Kaggle – Dogs vs. Cats](https://www.kaggle.com/c/dogs-vs-cats/data) et placer dans le répertoire de travail :
+Télécharger le dataset depuis [Kaggle – Dogs vs. Cats](https://www.kaggle.com/datasets/abdoulwahabsoumare/catdogbysouna) et placer dans le répertoire de travail :
 
 ```
 Cat_Dog_data/
@@ -43,7 +43,7 @@ Cat_Dog_data/
         dog/
 ```
 
-> **Note importante :** L'architecture des dossiers sur Kaggle est différente de celle utilisée pour ce devoir. Sur Kaggle, les images train sont mélangées dans un seul dossier `train/` avec les noms de fichiers comme `cat.0.jpg`, `dog.0.jpg`. Il faut donc réorganiser manuellement les images dans la structure ci-dessus (dossiers `cat/` et `dog/` séparés) avant de pouvoir utiliser `ImageFolder` de torchvision.
+> **Note :** Ce dataset est issu du jeu de données original [Dogs vs. Cats (Kaggle)](https://www.kaggle.com/c/dogs-vs-cats), puis réorganisé selon l'arborescence ci-dessus afin d'être compatible avec `ImageFolder` de torchvision.
 
 > Les données ne sont **pas** sur GitHub (`.gitignore`).
 
